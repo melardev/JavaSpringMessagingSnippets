@@ -1,0 +1,4 @@
+app:
+  jms:
+    queue:
+      destination: "MESSAGE_QUEUE"

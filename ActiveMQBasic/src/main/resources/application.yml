@@ -1,0 +1,9 @@
+app:
+  activemq:
+    queue:
+      name: amq-basic
+logging:
+  level:
+    root: ERROR
+    org.springframework: info
+    com.melardev: debug

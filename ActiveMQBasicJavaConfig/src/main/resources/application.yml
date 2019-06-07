@@ -1,0 +1,19 @@
+spring:
+  jms:
+    listener:
+      auto-startup: true
+
+app:
+  activemq:
+    queue: messages-queue
+    broker:
+      url: vm://localhost?broker.persistent=false
+      username: admin
+      password: admin
+
+
+logging:
+  level:
+    root: error
+    org.springframework: info
+    com.melardev: debug

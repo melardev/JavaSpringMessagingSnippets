@@ -1,0 +1,20 @@
+spring:
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
+app:
+  rabbitmq:
+    # Producer
+    exchange: rabbitmq-snippets.exchange
+    routingkey: rabbitmq-snippets.routingkey
+
+    # Consumer And Producer
+    queue: rabbitmq-snippets.queue
+logging:
+  level:
+    root: error
+    org.springframework: info
+    com.melardev: debug

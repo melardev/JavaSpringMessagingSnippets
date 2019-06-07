@@ -1,0 +1,14 @@
+app:
+  kafka:
+    topic:
+      name: kafka-send-to
+
+spring:
+  kafka:
+    bootstrap-servers: localhost:9092
+
+logging:
+  level:
+    root: ERROR
+    org.springframework.web: ERROR
+    com.melardev: DEBUG

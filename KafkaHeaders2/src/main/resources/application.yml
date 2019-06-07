@@ -1,0 +1,15 @@
+app:
+  kafka:
+    topic:
+      name: kafka-headers-2
+
+spring:
+  kafka:
+    bootstrap-servers: localhost:9092
+
+logging:
+  level:
+    root: ERROR
+    org.springframework.web: ERROR
+    com.melardev: DEBUG
+

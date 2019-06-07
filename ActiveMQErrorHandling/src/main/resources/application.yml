@@ -1,0 +1,17 @@
+spring:
+  activemq:
+    # Using Embedded broker
+    # If broker url not set Spring Boot will autoconfigure one ConnectionFactory with
+    # vm://localhost?broker.persistent=false
+    in-memory: true
+    non-blocking-redelivery: true
+    packages: # This is actually the only option we are required to set
+      trust-all: false
+      # very important otherwise we can not send our Message objects
+      trusted: com.melardev.spring
+
+logging:
+  level:
+    root: error
+    org.springframework: info
+    com.melardev: debug

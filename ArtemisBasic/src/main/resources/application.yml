@@ -1,0 +1,15 @@
+spring:
+  artemis:
+    embedded:
+      queues: messages
+
+app:
+  jms:
+    queue:
+      name: messages
+
+logging:
+  level:
+    root: ERROR
+    org.springframework: ERROR
+    com.melardev: DEBUG
